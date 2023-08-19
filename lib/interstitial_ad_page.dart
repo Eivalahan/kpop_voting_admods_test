@@ -40,9 +40,11 @@ class _InterstitialAdPageState extends State<InterstitialAdPage> {
               _moveToHome();
             },
           );
-          setState(() {
-            _interstitialAd = ad;
-          });
+          setState(
+            () {
+              _interstitialAd = ad;
+            },
+          );
         },
         onAdFailedToLoad: (err) {
           print('Failed to load an interstitial ad: ${err.message}');
