@@ -51,27 +51,6 @@ class _BannerAdPageState extends State<BannerAdPage> {
     );
   }
 
-  // void _loadInterstitialAd() {
-  //   InterstitialAd.load(
-  //     adUnitId: AdHelper.interstitialAdUnitId,
-  //     request: const AdRequest(),
-  //     adLoadCallback: InterstitialAdLoadCallback(
-  //       onAdLoaded: (ad) {
-  //         ad.fullScreenContentCallback = FullScreenContentCallback(
-  //           onAdDismissedFullScreenContent: (ad) {
-  //             _moveToHome();
-  //           },
-  //         );
-  //         setState(() {
-  //           _interstitialAd = ad;
-  //         });
-  //       },
-  //       onAdFailedToLoad: (err) {
-  //         print('Failed to load an interstitial ad: ${err.message}');
-  //       },
-  //     ),
-  //   );
-  // }
 
   @override
   void dispose() {
